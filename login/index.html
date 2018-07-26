@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" href="build/images/favicon.ico" type="image/ico" />
+
+    <title> Saankethika 2k18 | Login </title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCKHfPV7opXXXh861TcA6Pj1jwFgqriEbI",
+            authDomain: "saankethika18-c3bb5.firebaseapp.com",
+            databaseURL: "https://saankethika18-c3bb5.firebaseio.com",
+            projectId: "saankethika18-c3bb5",
+            storageBucket: "saankethika18-c3bb5.appspot.com",
+            messagingSenderId: "187120054785"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="login_div" class="main-div">
+        <h3>Saankethika 2k18 | Admin</h3>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+
+        <button onclick="login()">Login to Account</button>
+    </div>
+
+</body>
+
+</html>

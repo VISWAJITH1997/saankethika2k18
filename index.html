@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/lightning_2Sb_icon.ico">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Saankethika 2k18</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Owl Carousel -->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- firebase -->
+    <script>
+        $(document).ready(function() {
+            $("#li1").click(function() {
+                $("#InovvationMind").show();
+                $("#ElectronicsExtrapolated").hide();
+                $("#GameofCodes").hide();
+                $("#Cryptics").hide();
+                $("#CharadasMudas").hide();
+                $("#WhirlTracer").hide();
+            });
+            $("#li2").click(function() {
+                $("#InovvationMind").hide();
+                $("#ElectronicsExtrapolated").show();
+                $("#GameofCodes").hide();
+                $("#Cryptics").hide();
+                $("#CharadasMudas").hide();
+                $("#WhirlTracer").hide();
+            });
+            $("#li3").click(function() {
+                $("#InovvationMind").hide();
+                $("#ElectronicsExtrapolated").hide();
+                $("#GameofCodes").show();
+                $("#Cryptics").hide();
+                $("#CharadasMudas").hide();
+                $("#WhirlTracer").hide();
+            });
+            $("#li4").click(function() {
+                $("#InovvationMind").hide();
+                $("#ElectronicsExtrapolated").hide();
+                $("#GameofCodes").hide();
+                $("#Cryptics").show();
+                $("#CharadasMudas").hide();
+                $("#WhirlTracer").hide();
+            });
+            $("#li5").click(function() {
+                $("#InovvationMind").hide();
+                $("#ElectronicsExtrapolated").hide();
+                $("#GameofCodes").hide();
+                $("#Cryptics").hide();
+                $("#CharadasMudas").show();
+                $("#WhirlTracer").hide();
+            });
+            $("#li6").click(function() {
+                $("#InovvationMind").hide();
+                $("#ElectronicsExtrapolated").hide();
+                $("#GameofCodes").hide();
+                $("#Cryptics").hide();
+                $("#CharadasMudas").hide();
+                $("#WhirlTracer").show();
+            });
+        });
+
+    </script>
+    <style>
+        #snackbar2 {
+            visibility: hidden;
+            min-width: 250px;
+            margin-left: -125px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+            font-size: 17px;
+        }
+
+        #snackbar {
+            visibility: hidden;
+            min-width: 250px;
+            margin-left: -125px;
+            background-color: green;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+            font-size: 17px;
+        }
+
+        #snackbar2.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        #snackbar.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        @-webkit-keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                bottom: 30px;
+                opacity: 1;
+            }
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+
+    </style>
+    <style>
+        .multiselect {
+            width: 200px;
+        }
+
+        .selectBox {
+            position: relative;
+        }
+
+        .selectBox select {
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .overSelect {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        #checkboxes {
+            display: none;
+            border: 1px #dadada solid;
+        }
+
+        #checkboxes label {
+            display: block;
+        }
+
+        #checkboxes label:hover {
+            background-color: #1e90ff;
+        }
+
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+
+        <!-- Top nav -->
+        <div id="top-nav">
+            <div class="container">
+
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <!-- logo -->
+
+                <!-- Mobile toggle -->
+                <button class="navbar-toggle">
+                    <span></span>
+                </button>
+                <!-- Mobile toggle -->
+
+                <!-- social links -->
+                <ul class="social-nav">
+                    <li>
+                        <a href="https://www.facebook.com/RMK-Engineering-collegekavaraipettai-Chennai-242573179125201/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://rmd.ac.in" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /social links -->
+
+            </div>
+        </div>
+        <!-- /Top nav -->
+
+        <!-- Bottom nav -->
+        <div id="bottom-nav">
+            <div class="container">
+                <nav id="nav">
+
+                    <!-- nav -->
+                    <ul class="main-nav nav navbar-nav">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#events">Events</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- /nav -->
+
+                    <!-- button nav -->
+                    <ul class="cta-nav">
+                        <li>
+                            <a href="#register" class="main-button">Register Now</a>
+                        </li>
+                    </ul>
+                    <!-- button nav -->
+
+                    <!-- contact nav -->
+                    <ul class="contact-nav nav navbar-nav">
+                        <li>
+                            <a href="tel:8939028811">
+                                <i class="fa fa-phone"></i> 893-902-88-11</a>
+                        </li>
+                        <li>
+                            <a href="#map">
+                                <i class="fa fa-map-marker" href=""></i> RMD Engineering College</a>
+                        </li>
+                    </ul>
+                    <!-- contact nav -->
+
+                </nav>
+            </div>
+        </div>
+        <!-- /Bottom nav -->
+
+
+    </header>
+    <!-- /Header -->
+
+    <!-- Home -->
+    <div id="home" class="banner-area">
+
+        <!-- Backgound Image -->
+        <div class="bg-image bg-parallax overlay" style="background-image:url(./img/background02.png)"></div>
+        <!-- /Backgound Image -->
+
+        <div class="home-wrapper">
+
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <div class="home-content">
+                    <h1 class="white-text">Welcome To
+                        <strong>Saankethika 2k18</strong>
+                    </h1>
+                    <h4 class="white-text lead"></h4>
+                    <a class="main-button" href="#events">Discover</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /Home -->
+
+    <!-- About -->
+    <div id="about" class="section">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- section header -->
+                <div class="section-header text-center">
+                    <h4 class="sub-title">About Us</h4>
+                    <h2 class="title">Saankethika 2K18</h2>
+                </div>
+                <!-- /section header -->
+
+                <!-- about content -->
+                <div class="col-md-5">
+                    <h4 class="lead">The objective of the symposium is to bring the young budding engineering graduates together to present their findings and discuss future trends, directions and new challenges in the Electronics & Communication field. This symposium aims to intensify the information exchange of their ideas in theoretical research and practical developments.</h4>
+                </div>
+                <!-- /about content -->
+
+                <!-- about content -->
+                <div class="col-md-7">
+                    <p>
+                        <br>This symposium can be used to discuss what and how the student community can facilitate the process of technology development. This would prove to be a boon to students. It will provide a platform to discuss the strengths and weakness involved in sustainability of innovation in the Electronics & Communication field. It will be a forum for new ideas and concepts and also would endeavour to examine the different dimensions of Electronics & Communication field.</p>
+                </div>
+                <!-- /about content -->
+
+                <!-- Galery Slider -->
+                <div class="col-md-12">
+                    <div id="galery" class="owl-carousel owl-theme">
+
+                        <!-- single column -->
+                        <div class="galery-item">
+
+                            <!-- single image -->
+                            <div class="galery-img" style="background-image:url(./img/image01.jpg)"></div>
+                            <!-- /single image -->
+
+                        </div>
+                        <!-- single column -->
+
+                        <!-- single column -->
+                        <div class="galery-item">
+
+                            <!-- single image -->
+                            <div class="galery-img" style="background-image:url(./img/image02.jpg)"></div>
+                            <!-- /single image -->
+
+                            <!-- single image -->
+                            <div class="galery-img" style="background-image:url(./img/image03.jpg)"></div>
+                            <!-- /single image -->
+
+                        </div>
+                        <!-- single column -->
+
+                        <!-- single column -->
+                        <div class="galery-item">
+
+                            <div class="item-column">
+                                <!-- single image -->
+                                <div class="galery-img" style="background-image:url(./img/image04.jpg)"></div>
+                                <!-- /single image -->
+
+                                <!-- single image -->
+                                <div class="galery-img" style="background-image:url(./img/image05.jpeg)"></div>
+                                <!-- /single image -->
+                            </div>
+
+                            <div class="item-column">
+                                <!-- single image -->
+                                <div class="galery-img" style="background-image:url(./img/image06.jpg)"></div>
+                                <!-- /single image -->
+
+                                <!-- single image -->
+                                <div class="galery-img" style="background-image:url(./img/image07.jpg)"></div>
+                                <!-- /single image -->
+                            </div>
+
+                        </div>
+                        <!-- /single column -->
+
+                    </div>
+                </div>
+                <!-- /Galery Slider -->
+
+
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+    </div>
+    <!-- /About -->
+
+
+    <!-- Menu -->
+    <div id="events" class="section">
+
+        <!-- Backgound Image -->
+        <div class="bg-image bg-parallax overlay" style="background-image:url(./img/background01.jpg)"></div>
+        <!-- /Backgound Image -->
+
+        <!-- container -->
+
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <div class="section-header text-center">
+                    <h4 class="sub-title">Discover</h4>
+                    <h2 class="title white-text">Our Events</h2>
+                </div>
+
+                <!-- menu nav -->
+                <ul class="menu-nav">
+                    <li class="active" id="li1">
+                        <a data-toggle="tab">Inovvation Mind</a>
+                    </li>
+                    <li id="li2">
+                        <a data-toggle="tab">Electronics Extrapolated</a>
+                    </li>
+                    <li id="li3">
+                        <a data-toggle="tab">Game of Codes</a>
+                    </li>
+                    <li id="li4">
+                        <a data-toggle="tab">Cryptics</a>
+                    </li>
+                    <li id="li5">
+                        <a data-toggle="tab">Charadas Muets</a>
+                    </li>
+                    <li id="li6">
+                        <a data-toggle="tab">Whirl Tracer</a>
+                    </li>
+                </ul>
+                <style>
+
+
+                </style>
+                <!-- /menu nav -->
+
+                <!-- menu content -->
+                <div id="menu-content" class="tab-content">
+
+                    <!-- menu1 -->
+                    <div id="InovvationMind" class="tab-pane fade in active ">
+                        <div class="col-md-15">
+                            <h2 style="color: chocolate; font-size: 20px;">Description:</h2>
+                            <!-- single dish -->
+                            <h4 class="name"> “Let your mind write the paper not your hand”</h4>
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">A presentation is the process of presenting a topic to an audience. It is typically a demonstration, introduction, lecture, or speech meant to inform, persuade, inspire, motivate, or to build good will or to present a new idea or product. It&#39;s time to unleash the technical fundamental knowledge and talent within you through presentation. All you need to do is fuel your brain to ideate the ideas. The stage has been set to listen to your words. Crave every word before you let it fall. Take up the challenge to drive home your genuine ideas. Who knows this could bring you fame and glory!<br> Selected papers will be intimated through mail, only one round and that will be a decisive round.
+                            </p>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Topic:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> Technical (Paper Presentation)</p>
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Last Date To Submit:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> 3-08-2018</p>
+                                <p style=" color: #969696; font-size: 16px; font-weight: 530"><br>Participants should submit the soft copy of the full paper in IEEE format (abstract alone will not be accepted) and email to <strong>saankethika2k18@gmail.com</strong></p>
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">
+                                <p style="display:inline; color: chocolate; font-size: 16px; font-weight: 530">Maximum 3 members per team</p>
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Prize money:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">₹1000, ₹750, ₹500</p>
+                            </h2>
+
+
+                        </div>
+
+                    </div>
+                    <!-- /menu1 -->
+                    <div id="ElectronicsExtrapolated" class="tab-pane fade in active" style="display: none;">
+                        <div class="col-md-15">
+                            <h2 style="color: chocolate; font-size: 20px;">Description:</h2>
+                            <!-- single dish -->
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">To all those tech enthusiasts out there, we admire your tech-savvy and believe that your innovations contribute to a sustainable nation competing global standards. Thereby ,RMD provides a platform to exhibit your aspirations via Sankeethika. Because,
+                            </p>
+                            <h4 style="display:inline;" class="name"> <br> “Any sufficiently advanced technology is equivalent to magic” </h4>
+                            <h2 style="color: chocolate; font-size: 20px;">Topic:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"><br> Technical (Project Presentation)</p>
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">
+                                <p style="display:inline; color: chocolate; font-size: 16px; font-weight: 530">Maximum 3 members per team<br></p>
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Prize money:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">₹1000, ₹750, ₹500<br></p>
+                            </h2>
+
+                        </div>
+                    </div>
+                    <div id="GameofCodes" class="tab-pane fade in active" style="display: none;">
+                        <div class="col-md-15">
+                            <h2 style="color: chocolate; font-size: 20px;">Description:</h2>
+
+                            <h4 class="name">“Think Twice Code Once”</h4>
+                            <!-- single dish -->
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">RMD is promoting learning though fun and contests like GAME OF CODES as programming is becoming the skill for future and provide a fast gateway to a technology career.</p>
+
+
+                            <!-- <h2 style="color: chocolate; font-size: 20px;">Topic:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> Technical (Project Presentation)</p>
+                            </h2> -->
+
+
+                            <h2 style="color: chocolate; font-size: 20px;">Rules:
+                                <h4 class="name">Round-1 (Elimination)</h4>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">General MCQ on c, c++, java.</p>
+                                <h4 class="name">Round-2 (Finals)</h4>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">Paper Coding test.</p>
+
+                            </h2>
+
+
+                            <h2 style="color: chocolate; font-size: 20px;">
+                                <p style="display:inline; color: chocolate; font-size: 16px; font-weight: 530">Maximum 2 members per team</p>
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Prize money:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">₹1000, ₹750, ₹500</p>
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+                    <div id="Cryptics" class="tab-pane fade in active" style="display: none;">
+                        <div class="col-md-15">
+                            <h2 style="color: chocolate; font-size: 20px;">Description:</h2>
+                            <!-- single dish -->
+                            <h4 class="name"> “A quiz is a form of game or mind sport.”</h4>
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">Wisdom begins with wonder. Even though you can compete as a team, a whole game can change based on the random knowledge of a person. RMD provides a platform to test your knowledge and activate your brain with some puzzling and brain storming questions. This is a team event to analyze technical skills, intelligence and presence of mind.
+                            </p>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Rules:
+                                <h4 class="name">Round-1 (Elimination)</h4>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">General MCQ on electronics</p>
+                                <h4 class="name">Round-2 (Finals)</h4>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">Technical MCQ’s</p>
+
+                            </h2>
+
+                            <!--
+                            <h2 style="color: chocolate; font-size: 20px;">Last Date Submission:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> 3-08-2018</p>
+                            </h2>
+-->
+
+                            <h2 style="color: chocolate; font-size: 20px;">
+                                <p style="display:inline; color: chocolate; font-size: 16px; font-weight: 530">Maximum 3 members per team</p>
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Prize money:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">₹1000, ₹750, ₹500</p>
+                            </h2>
+
+
+                        </div>
+
+                    </div>
+
+                    <div id="CharadasMudas" class="tab-pane fade in active" style="display: none;">
+                        <div class="col-md-15">
+                            <h2 style="color: chocolate; font-size: 20px;">Description:</h2>
+                            <!-- single dish -->
+                            <h4 class="name"> “It has been said that in the man with a voice will be king”</h4>
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> It is now time to prove them wrong. Silence will be heard. Actions speak louder than words. Tweaking it to our convenience, we challenge your charades to speak louder than words and stun us with your 'dumb' act.
+                            </p>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Rules:
+                                <h4 class="name">Round-1:</h4>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> Elimination</p>
+                                <h4 class="name">Round-2:</h4>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> Finals</p>
+
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">
+                                <p style="display:inline; color: chocolate; font-size: 16px; font-weight: 530">Maximum 2 members per team</p>
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Prize money:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">₹1000, ₹750, ₹500</p>
+                            </h2>
+
+
+                        </div>
+                    </div>
+                    <div id="WhirlTracer" class="tab-pane fade in active" style="display: none;">
+                        <div class="col-md-15">
+                            <h2 style="color: chocolate; font-size: 20px;">Description:</h2>
+                            <!-- single dish -->
+                            <h4 class="name"> “There must be a positive and negative in everything in the universe in order to complete a circuit or circle, without which there would be no activity, no motion.”
+                            </h4>
+                            <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. A “bug” in a circuit sense is considered to be a fault that makes the circuit not work as intended. It could be a inadvertent fault or a design error or an incorrect or bad component. So finding the bugs is an important part of getting a newly manufactured but not operable circuit board to work.
+                            </p>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Rules:
+                                <h4 class="name">Round-1:</h4>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> Elimination</p>
+                                <h4 class="name">Round-2:</h4>
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> Finals</p>
+
+                            </h2>
+
+                            <!--
+                            <h2 style="color: chocolate; font-size: 20px;">Last Date Submission:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530"> 3-08-2018</p>
+                            </h2>
+-->
+
+                            <h2 style="color: chocolate; font-size: 20px;">
+                                <p style="display:inline; color: chocolate; font-size: 16px; font-weight: 530">Maximum 2 members per team</p>
+                            </h2>
+
+                            <h2 style="color: chocolate; font-size: 20px;">Prize money:
+                                <p style="display:inline; color: #969696; font-size: 16px; font-weight: 530">₹1000, ₹750, ₹500</p>
+                            </h2>
+
+
+                        </div>
+                    </div>
+
+                    <!-- /menu content -->
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /container -->
+
+        </div>
+        <!-- /Menu -->
+    </div>
+    <!-- Reservation -->
+    <div id="register" class="section">
+
+        <!-- Backgound Image -->
+        <div class="bg-image" style="background-image:url(./img/background03.jpg)"></div>
+        <!-- /Backgound Image -->
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- reservation form -->
+                <div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                    <form class="reserve-form row" id="contactForm">
+                        <div class="section-header text-center">
+                            <div id="snackbar2">Select Atleast One Event</div>
+                            <h4 class="sub-title">Registration</h4>
+                            <h2 class="title white-text">Book Your Event</h2>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input class="input" type="text" placeholder="Name" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone:</label>
+                                <input class="input" type="number" placeholder="Phone" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Department:</label>
+                                <input class="input" type="text" placeholder="Department" id="dept" required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input class="input" type="email" placeholder="Email" id="email" required>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label for="college">College:</label>
+                                <input class="input" type="text" placeholder="College Name" id="college" required>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="multiselect">
+                                    <label for="number">Events:</label>
+                                    <div class="selectBox" onclick="showCheckboxes()">
+                                        <select class="input">
+                                        <option>Select Events</option>
+                                    </select>
+                                        <div class="overSelect"></div>
+                                    </div>
+                                    <div id="checkboxes">
+                                        <optgroup label="Presentation">
+                                        </optgroup>
+                                        <label for="one">
+                                            <input type="checkbox" id="one" />Inovvation Mind</label>
+                                        <label for="two">
+                                            <input type="checkbox" id="two"/>Electronics Extrapolated</label>
+                                        <optgroup label="Contest">
+                                        </optgroup>
+                                        <label for="three">
+                                            <input type="checkbox" id="three"/>Game of Codes</label>
+                                        <label for="four">
+                                            <input type="checkbox" id="four"/>Cryptics</label>
+                                        <label for="five">
+                                        
+                                            <input type="checkbox" id="five" />Charadas Muets</label>
+                                        <label for="six">
+                                            <input type="checkbox" id="six" />Whirl Tracer</label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <button class="main-button" type="submit">Register Now</button>
+                        </div>
+                        <div id="snackbar">Registered Successfully Completed</div>
+                    </form>
+                    <!-- /reservation form -->
+                </div>
+                <!-- opening time -->
+                <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                    <div class="opening-time row">
+                        <div class="section-header text-center">
+                            <h2 class="title white-text">Instructions</h2>
+                        </div>
+
+                        <ul>
+                            <li></li>
+                            <li>
+                                <h4 class="day">All Students must bring their college ID Card</h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Students are asked come in formal dress</h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Decision of the judges will be final and will not be subjected to any further discussions.</h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Online Registration closes on 25th February.</h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day"></h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day"></h4>
+                                <h4 class="hours"></h4>
+                            </li>
+                            <li>
+                                <h4 class="day">Fee To Registering</h4>
+                                <h4 class="hours"> Free</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /opening time -->
+            </div>
+        </div>
+        <!-- /row -->
+
+    </div>
+    <!-- /container -->
+
+    <!-- /Reservation -->
+
+    <!-- Contact -->
+    <div id="contact" class="section">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <div class="col-md-5 col-md-offset-7">
+                    <div class="section-header">
+                        <h4 class="sub-title">Contact Us</h4>
+                        <h2 class="title">Get In Touch</h2>
+                    </div>
+                    <div class="contact-content">
+                        <p>Address: RMD College Rd, Kavaraipettai, Tamil Nadu 601206</p>
+                        <p>Email:
+                            <a href="#">saankethika2k18@gmail.com</a>
+                        </p>
+                        <p>Tel:
+                            <a href="tel:8637644857">863-764-48-57</a> ,
+                            <a href="tel:8939028811">893-902-88-11</a>
+                            <p>
+
+                                <ul class="list-inline">
+                                    <li>
+                                        <p>Follow Us:</p>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/RMK-Engineering-collegekavaraipettai-Chennai-242573179125201/">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="http://rmd.ac.in" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                                    </li>
+                                </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+        <!-- map -->
+        <div id="map"></div>
+        <!-- /map -->
+
+    </div>
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- copyright -->
+                <div class="col-md-6">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <span class="copyright">Copyright @2018 All rights reserved.</span>
+                </div>
+                
+                <div class="col-md-6">
+                    
+                    <span class="credits" > Developed by<a href="/developer/index.html" class="abcd">Mavuluru Viswajith Reddy</a></span>
+                    <style>
+                        .abcd {
+                            color: white;
+                        }
+
+                        .abcd:hover {
+                            color: orange;
+                        }
+
+                    </style>
+                </div>
+                
+                <!-- /footer nav -->
+
+            </div>
+            <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+    </footer>
+    <!-- /Footer -->
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- jQuery Plugins -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        var expanded = false;
+
+        function showCheckboxes() {
+            var checkboxes = document.getElementById("checkboxes");
+            if (!expanded) {
+                checkboxes.style.display = "block";
+                expanded = true;
+            } else {
+                checkboxes.style.display = "none";
+                expanded = false;
+            }
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/google-map.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
